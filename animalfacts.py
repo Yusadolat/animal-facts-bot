@@ -201,7 +201,7 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle','warthog', 'wolf', 'whale', 'zebra')
 
 
 def check_comment_for_animal(comment, reddit):
@@ -266,6 +266,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
+    botengine('warthog', '\swarthog\s', reddit, WARTHOG_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
@@ -1183,6 +1184,17 @@ TURTLE_FACTS = (
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
+WARTHOG_FACTS = (   
+ 'The warthog scientific name is Phacochoerus africanus.',
+    'Warthogs are the only pigs that can survive in hot areas without water for several months, as their bodies conserve moisture inside that might otherwise be used for cooling.',
+    'These strange looking pigs grow up to 1.5 metres long and 85 cm tall.',
+    'Common warthogs are very fast runners and can run up to 48 kph to escape predators such as lions, African wild dogs, spotted hyenas, Nile crocodiles, leopards and cheetahs.  When they run, their tail sticks straight up in the air.',
+    'The warts on their face are used to protect themselves.',
+  'They also have very long curved tusks, growing up to 64 cm long in males.  These tusks can cause a lot of damage to predators.',
+    'They often use aardvark burrows as protection from predators, to sleep in at night and to raise their 1-4 piglets.',
+    'Common warthogs are found in the grasslands and open savanna of sub-Saharan Africa.',
+    )
+
 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -1283,6 +1295,7 @@ ALL_FACTS = (
     STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
+    WARTHOG_FACTS,
     WOLF_FACTS,
     WHALE_FACTS,
     ZEBRA_FACTS
